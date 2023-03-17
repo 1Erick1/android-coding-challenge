@@ -15,7 +15,7 @@ class NetworkTransactionsTest {
     @Test
     fun apacheFileIsReturned() {
         val testObserver = TestObserver<String>()
-        mockNetworkClass.downloadApacheFile(testObserver, Schedulers.trampoline(), Schedulers.trampoline())
+        //mockNetworkClass.downloadApacheFile(testObserver, Schedulers.trampoline(), Schedulers.trampoline())
 
         testObserver.assertValueCount(11)
         testObserver.assertComplete()

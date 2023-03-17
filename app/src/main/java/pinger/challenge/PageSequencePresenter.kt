@@ -38,7 +38,7 @@ class PageSequencePresenter(
 
     override fun fetchMostPopularPathSequences() {
         view?.changeProgressBarVisibility(true)
-        networkTransactions.downloadApacheFile(getDefaultObserver())
+        //networkTransactions.downloadApacheFile(getDefaultObserver())
     }
 
     private fun parseApacheLogs(pathSequenceData: MutableList<String>): HashMap<String, MutableList<String>> {
